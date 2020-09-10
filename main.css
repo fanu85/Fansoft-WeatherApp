@@ -28,6 +28,12 @@ html, body{
     font-family: "Helvetica", "Verdana", sans-serif;
     font-size: 12px;
 }
+
+body{
+    background-color: rgba(194, 187, 187, 0.986);
+}
+
+
 .container{
     display: flex;
     flex-wrap: wrap; 
@@ -54,7 +60,13 @@ main{
     background: white;
 }
 
+.fa{
+    display: none;
+}
 
+.fa-calendar, .fa-map-marker, .fa-bars{
+    display: inline-block;
+}
 footer{
     height: 50px;
     width: 100%; 
@@ -79,10 +91,18 @@ footer{
     align-items: center;
 }
 
+.weather-icon img{
+    width: 50px;
+    height: 50px;
+}
 
 .desc{
     text-align:center;
-    font-size: .9rem;
+    font-size: 1rem;
+}
+
+.city{
+    font-weight: 600;
 }
 
 .weather-detail{
@@ -99,6 +119,9 @@ footer{
 }
 .main-temp{
     font-size: 5em;
+    color: rgba(216, 10, 72, 0.856);
+    font-weight: 600;
+    text-shadow: 0px 5px 25px rgba(0, 0, 0, .5);
 }
 
 .misc-items{
@@ -116,6 +139,10 @@ footer{
 
 
 
+
+
+
+
 /*********************************************************************** 
 *********************Layout Specific Styles***************************
 ************************************************************************/
@@ -124,10 +151,6 @@ footer{
 /* mobile phones  400px or less*/
 
 @media only screen and (max-width: 360px){
-
-        body{
-            background-color: rgba(194, 187, 187, 0.986);
-        }
 
         .fa-bars{
             margin-right: .3rem;
@@ -158,9 +181,6 @@ this will make their siblings to unwrap next to them if they fit*/
 
 @media only screen and (min-width:361px){
 
-    body{
-        background-color: blue;
-    }
 
 }
 
@@ -168,13 +188,16 @@ this will make their siblings to unwrap next to them if they fit*/
 @media only screen and (min-width:600px){
 
     /* constraint that layout container to a fixed width and center it*/
-    body{
-        background-color: rgba(194, 187, 187, 0.986);
-    }
 
     .misc-items{
         flex-direction: column;
         align-items: flex-start;
+    }
+
+
+    .weather-detail{
+        padding: 2rem;
+        padding-right: .3rem;
     }
 
 }
@@ -191,9 +214,6 @@ this will make their siblings to unwrap next to them if they fit*/
     .container{
         width: 800px;
         margin: 0 auto;
-    }
-    body{
-        background-color: rgba(194, 187, 187, 0.986);
     }
 
     .misc-items{

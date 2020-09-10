@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="simple PWA weather app">
+    <meta name="theme-color" content="#f70375" >
     <title>Fansoft WeatherApp</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
     <div class="container">
@@ -16,7 +20,7 @@
             <form action="">
                 <input type="search" name="" id="search-field" autofocus autocomplete="off" 
                 placeholder="Search your city">
-                <!-- <button type="submit" id="search-btn"><i class="fa fa-search"></i></button> -->
+                <button type="submit" id="search-btn"><i class="fa fa-search"></i></button>
             </form>
         </header>
         <main>
@@ -24,11 +28,12 @@
             <div class="weather-info">
                 
                 <div class="location">
+                    <i class="fa fa-map-marker"></i>
                     <span class="city">Nairobi,<span class="country"> Kenya</span></span>
                 </div>
 
                 <div class="time">
-                    <span class="local-time">Tuesday, April 15 </span>
+                    <i class="fa fa-calendar"></i><span class="local-time"> Tuesday, April 15 </span>
                 </div>
 
 
@@ -51,24 +56,13 @@
                     <ul class="misc-items">
                         <li class="preci">Precipitation: <span>100%</span></li>
                         <li class="humidity">Humidity: <span>97%</span></li>
-                        <li class="wind">Wind: <span class="speed">120km/h</span><span class="direction"> 100&deg;</span></li>
+                        <li class="wind">Wind: <span class="speed">120km/h</span><span class="direction"><i class="fa fa-location-arrow"></i>100&deg;</span></li>
                         <li class="cloudiness">Cloudiness:<span>100%</span></li>
                         </ul>
             </div>
-
-                
-                    
-
-
-
-
-
-
             </div>
 
         </main>
-
-
         <footer>
 
         </footer>
