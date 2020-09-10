@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fansoft Weather App</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Fansoft WeatherApp</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
         <header>
-            header
+            <div class="hambuger">
+                  <i class="fa fa-bars"></i>
+            </div>
+            <form action="">
+                <input type="search" name="" id="search-field" autofocus autocomplete="off" 
+                placeholder="Search your city">
+                <!-- <button type="submit" id="search-btn"><i class="fa fa-search"></i></button> -->
+            </form>
         </header>
-
         <main>
-            main
+
+            <div class="weather-info">
+                
+                <div class="location">
+                    <span class="city">Nairobi,<span class="country"> Kenya</span></span>
+                </div>
+
+                <div class="time">
+                    <span class="local-time">Tuesday, April 15 </span>
+                </div>
+
+
+                <div class="weather-detail">
+                    
+                    <div class="temp-info">
+                        <span class="main-temp">25&deg;</span>
+                        <span class="feels-like">Feels like <span class="value">24&deg;</span></span>
+                        <div class="hi-low">
+                            <span class="hi">27&deg;</span>
+                            <span>/</span>
+                            <span class="low">24&deg;</s>
+                        </div>
+                    </div>
+
+                    <div class="weather-icon">
+                        <img src="icons/weather.png" alt="" id="weather-icon">
+                        <span class="desc">Sunny</span>                        
+                    </div>
+                    <ul class="misc-items">
+                        <li class="preci">Precipitation: <span>100%</span></li>
+                        <li class="humidity">Humidity: <span>97%</span></li>
+                        <li class="wind">Wind: <span class="speed">120km/h</span><span class="direction"> 100&deg;</span></li>
+                        <li class="cloudiness">Cloudiness:<span>100%</span></li>
+                        </ul>
+            </div>
+
+                
+                    
+
+
+
+
+
+
+            </div>
+
         </main>
 
+
         <footer>
-            footer
+
         </footer>
-    </div>
 
-
-
-
-
-    <script src="scripts/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
